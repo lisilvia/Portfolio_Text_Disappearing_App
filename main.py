@@ -52,7 +52,6 @@ text_area = Text(window, width=100, height=30, font=(FONT_NAME, 16), fg="#303030
 text_area.config(spacing2=8)
 text_area.insert(END, "Start typing here...")
 text_area.bind("<FocusIn>", lambda args: text_area.delete('1.0', END))
-# text_area.bind("<FocusOut>", lambda args: text_area.insert('0', 'yyyy-mm-dd'))
 text_area.bind("<Key>", action)
 text_area.pack()
 
