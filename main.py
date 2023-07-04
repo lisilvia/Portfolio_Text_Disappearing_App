@@ -45,10 +45,10 @@ def delete_text():
 
 window = Tk()
 window.title("Disappearing Text Writing App")
-window.minsize(1000, 700)
+window.minsize(100, 30)
 
 
-text_area = Text(window, width=100, height=32, font=(FONT_NAME, 16), fg="#303030", highlightthickness=0, padx=350, pady=100)
+text_area = Text(window, width=100, height=30, font=(FONT_NAME, 16), fg="#303030", highlightthickness=0, padx=40, pady=40)
 text_area.config(spacing2=8)
 text_area.insert(END, "Start typing here...")
 text_area.bind("<FocusIn>", lambda args: text_area.delete('1.0', END))
